@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>World Clock</title>
     <link rel="stylesheet" href="src/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.45/moment-timezone-with-data-1970-2030.min.js"></script>
 </head>
 <body>
     <div class="container">
@@ -14,39 +16,38 @@
 <select name="countries" id="select-input">
 <option value="Search for a city ....">Search for a city...</option>
 <option value="current-location">My current location</option>
-<option value="New York">New York</option>
-<option value="USA">USA</option>
+<option value="New-york">New York</option>
+<option value="uk">UK</option>
+<option value="uk">Sydney</option>
 
     </select>
 
-    <div class="cities">
+    <div class="cities" id="canada">
 <div class="left">
-    <h2>Sydney</h2>
+    <h2>Canada</h2>
 
-<div class="date">September 07 2024</div>
+<div class="date"></div>
 
 </div>
 <div class="right">
     
-<div class="time">07:49:15 
-  <small> AM </small>
+<div class="time">
 </div>
 
 </div>
 
     </div>
 
-    <div class="cities">
+    <div class="cities" id="dubai">
 <div class="left">
-    <h2>New York</h2>
+    <h2>Dubai</h2>
 
-<div class="date">September 07 2024</div>
+<div class="date"></div>
 
 </div>
 <div class="right">
     
-<div class="time">07:49:15 
-  <small> AM </small>
+<div class="time"> 
 </div>
 
 </div>
