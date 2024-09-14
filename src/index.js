@@ -52,6 +52,9 @@ if(timezone === "current-location"){
 <div class="time"> 
 ${moment().tz(timezone).format("hh:mm:ss [<small>]A[</small>]")}
 </div>
+
+<a href="/">All cities</a>
+
  `;
 }
 
