@@ -56,8 +56,9 @@ small {
 
 .canada-date, .london-date, .date {
     opacity: 0.7;
+    padding-bottom: 10px;
 }
 
 a {
-    text-align: left;
+    margin-top: 10px;
 }
