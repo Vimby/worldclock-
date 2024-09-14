@@ -33,20 +33,24 @@ canadaTime.innerHTML= moment()
 
 function onChange(event) {
   let city = document.querySelector(".cities");
-  let cityName= event.target.value.replace("_", " ").split("/")[1];
+  let timezone = event.target.value;
+if(timezone === "current-location"){
+  timezone = moment.tz.guess();
+}
+  let cityName= timezone.replace("_", " ").split("/")[1];
   city.innerHTML = `
  <div class="city">
 <div class="left">
     <h2>${cityName}</h2>
 
-<div class="date">${moment().tz(event.target.value).format("MMMM Do YYYY")}
+<div class="date">${moment().tz(timezone).format("MMMM Do YYYY")}
    </div>
 
 </div>
 <div class="right">
     
 <div class="time"> 
-${moment().tz(event.target.value).format("hh:mm:ss [<small>]A[</small>]")}
+${moment().tz(timezone).format("hh:mm:ss [<small>]A[</small>]")}
 </div>
  `;
 }
